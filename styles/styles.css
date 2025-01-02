@@ -6,18 +6,60 @@ body {
   background-color: #f4f4f4;
 }
 
-h1, h2 {
+header {
+  background-color: hsl(0, 11%, 98%);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+}
+
+
+#header-container{
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr auto;  /* Utiliza 1fr para el logo (ocupando el espacio restante) y 'auto' para la navegación */
+  gap: 20px;  /* Espacio entre el logo y la navegación */
+  align-items: center; /* Centra los elementos verticalmente dentro del contenedor */
+}
+
+
+#brand-logo{
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;  /* Alineación del logo a la izquierda */
+}
+
+
+#brand-logo h1 {
+  margin:  30px;
+  padding: 30px;
+  font-size: 4em;
+  font-family: Verdana;
+  font-family: 'PT Sans';
+  padding-top: 6px;
+  letter-spacing: 0.5px;
+}
+
+
+
+#main-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;  /* Para alinear los elementos de navegación horizontalmente */
+  justify-content: flex-end;  /* Alinea los enlaces de navegación a la derecha */
+  background-color: hsl(0, 0%, 3%);
+  color: rgb(0, 0, 0);
+}
+
+#main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 /* Cabecera */
-header {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
 
 header nav ul {
   list-style-type: none;
